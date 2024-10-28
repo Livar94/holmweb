@@ -1,0 +1,51 @@
+.content {
+    padding: 10rem 0;
+}
+
+.workList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .workList {
+        grid-template-columns: 1fr;
+    } 
+}
+
+.work {
+    overflow: hidden;
+    border-radius: 1em;
+    max-height: 300px;
+    position: relative;
+}
+
+.work img {
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover !important;
+}
+
+.workInfo {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.668);
+    color: white;
+}
+
+.title {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+}

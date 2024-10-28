@@ -1,0 +1,77 @@
+
+  
+  .buckets {
+    position: relative;
+    /* border: 6px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .buckets div {
+    position: absolute;
+    animation: bucket_rotate 40s infinite linear;
+    top: 50%;
+    left: 50%;
+ /*    margin-top: 11px;
+    margin-left: -13px; */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .buckets div {
+
+      top: unset;
+      left: unset;
+
+    }
+  }
+
+
+  
+  @keyframes bucket_rotate {
+    0% { 
+      transform: rotate(0) translateX(150px) rotate(0); 
+    }
+    100% { 
+      transform: rotate(360deg) translateX(150px) rotate(-360deg); 
+    }
+  }
+  
+  .buckets div:nth-child(2) {
+    animation-delay: -4.8s;
+  }
+  
+  .buckets div:nth-child(3) {
+    animation-delay: -9.9s;
+  }
+  
+  .buckets div:nth-child(4) {
+    animation-delay: -15s;
+  }
+  
+  .buckets div:nth-child(5) {
+    animation-delay: -20s;
+  }
+  
+  .buckets div:nth-child(6) {
+    animation-delay: -25s;
+  }
+  
+  .buckets div:nth-child(7) {
+    animation-delay: -30s;
+  }
+  
+  .buckets div:nth-child(8) {
+    animation-delay: -35s;
+  }
+
+  .img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }

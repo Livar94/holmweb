@@ -1,0 +1,46 @@
+.tetrisDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    box-shadow: rgba(141, 140, 140, 0.329) 0px 3px 8px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 10em;
+    border-radius: 1em;
+    padding: 4em;
+    gap: 2em;
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .tetrisDiv {
+        grid-template-columns: 1fr;
+    }
+}
+
+.text {
+
+}
+
+.text button {
+    padding: 1em 6em;
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 2em;
+
+}
+
+.pic {
+
+    
+}
+
+.pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
